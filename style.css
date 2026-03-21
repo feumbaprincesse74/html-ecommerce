@@ -1,0 +1,179 @@
+/* configuration generale */
+body {
+    font-family:  Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+/* Fil d'Ariane */
+.leather {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+}
+.leather a {
+    text-decoration: none;
+    color: #007bff;
+}
+/*Mise en page de la section d'ariane */
+.product-container {
+    display: flex;
+    gap: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0,0, 0.1);
+}
+/* Galerie images (Grille 2x2)*/
+.product-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    flex: 1;
+}
+.product-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.product-gallery figcaption {
+    font-size: 0.8em;
+    text-align: center;
+    color: #777;
+}
+/*info product */
+.product-info {
+    flex: 1;
+}
+.price {
+    font-size: 1.5em;
+    color: #e44d26;
+    font-weight: bold;
+}
+.stock {
+    color: green;
+}
+/*Formulaire */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 4px;
+}
+.add-to-cart:hover {
+    background-color: #218838;
+}
+/*Onglets */
+.product-tabs {
+    margin-top: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.tab-links {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+.tab-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    background: #f9f9f9;
+}
+.tab-content {
+    padding: 10px 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+/*produits similaires */
+.related-products {
+    margin-top: 30px;
+}
+.related-products ul {
+    list-style: square;
+}
+/* style du bouton d'ouvertures */
+.btn-open-modal {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #f9f9f9;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+/*Fond de la modale (cacher par defaut) */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0,0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s; z-index: 1000;
+}
+/*Affichage de la modale via l'ancre (:target) */
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+/*Contenu de la fenetre blanche */
+.modal-content {
+    background: #ddd;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    max-height: 80vh;
+    overflow-y:auto
+}
+/*Bouton de fermeture */
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #333;
+}
+/*Style des avis dans la modale */
+.review-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+.stars {
+    color: #f39c12;
+    margin-left: 10px;
+}
