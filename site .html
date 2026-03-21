@@ -3,9 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fiche de produit</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>premiere version de mon projet</h1>
+<header>
+    <nav>
+        <p class="leather">
+            <a href="#">Accueil</a> &gt;
+            <a href="#">vetements Homme</a> &gt;
+            <span>veste en jean</span>
+        </p>
+    </nav>
+</header>
+<main>
+    <section class="product-container">
+        <div class="product-gallery">
+            <figure>
+                <img src="image.png" alt="vue de face de la veste en jean">
+                <figcaption>vue de face</figcaption> 
+            </figure>
+            <figure>
+                <img src="image2.png" alt="details des coutures de la veste">
+                <figcaption>Details coutures</figcaption>
+            </figure>
+            <figure>
+                <img src="image3.png" alt="vue de dos de la veste">
+                <figcaption>vue de dos</figcaption>
+            </figure>
+            <figure>
+                <img src="image4.png" alt="veste portee par un mannequin">
+                <figcaption>style porter</figcaption>
+            </figure>
+        </div>
+<div class="product-info">
+    <h1>Veste Denim Classique "Authentique"</h1>
+    <p class="price">75,00 $</p>
+    <p class="ref">Reference :VST-2025-DENIM</p>
+    <P class="stock">Disponibilite : <strong>En stock</strong></P>
+    <form action="#"method="POST">
+        <label for="size">Taille :</label>
+        <select name="size" id="size" required>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        </select>
+        <Label for="color">Couleur :</Label>
+        <select name="color" id="color">
+            <option value="blue">blue indigo
+                <option value="noir">noir delave</option>
+            </option>
+        </select>
+        <label for="quantity">Quantite :</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="100">
+        <button type="submit" class="add-to-cart">
+        Ajouter au panier</button>
+    </form>
+</div>
+    </section>
+    <div class="product-tabs">
+        <nav class="tab-links">
+            <a href="#description">Description</a>
+            <a href="#specification">Specification</a>
+            <a href="#avis">Avis Clients</a>
+        </nav>
+        <div id="Description" class="tab-content">
+            <h3>Description du produit</h3>
+            <p>Cette veste en jean est un incontournable de votre garde-robe 
+                . Fabriquer en coton biologique, elle offre une coupe biologique,
+                 elle offre une coupe ajuster et un confort durable.
+            </p>
+        </div>
+        <div id="specification " class="tab-content">
+            <h3>Caracteristiques techniques</h3>
+            <table border="1">
+                <tr>
+                    <th>Matiere</th>
+                    <td>100% coton DENIM</td>
+                </tr>
+                <tr>
+                    <th>Lavage</th>
+                    <td>30*c en machine</td>
+                </tr>
+                <tr>
+                    <th>Poches</th>
+                    <td>2 poches potrine, 2 poches laterales</td>
+                </tr>
+            </table>
+        </div>
+    <div id="Avis" class="tab-content"><h3>Avis Clients</h3></div>
+    <div class="review">
+        <p><strong>Lucy B.</strong> - 
+        Note : 5/5</p>
+        <p>"Excellente qualiter , la taille M tombe parfaitement."</p>
+    </div>
+    <div class="review"> 
+        <p><strong>Miguel I.</strong> - Note : 4/5</p>
+        <p>"Tres jolie couleur mais un peu rigid au debut."</p>
+    </div>
+    <div class="review">
+        <p><strong>Paul k.</strong> - Note : 5/5</p>
+        <p>"Livraison rapide et produit conforme."</p>
+    </div>
+    </div>
+</div>
+<section class="related-products">
+    <h2>Produits similaires</h2>
+    <ul>
+        <li><a href="#">Jean slim assorti</a></li>
+        <li><a href="#">T-shirt coton blanc </a></li>
+        <li><a href="#">Casquette vintage</a></li>
+    </ul>
+</section>
+</main>
+<footer>
+    <p>&copy; 2026 Boutique NEIRIS FASHION - Tous droit reserves</p>
+</footer>
 </body>
 </html>
